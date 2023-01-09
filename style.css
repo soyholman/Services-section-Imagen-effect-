@@ -1,0 +1,103 @@
+*{
+
+box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.service-grid{
+    background-color: #fcfcfc;
+}
+
+.service-title h4{
+    position: relative;
+    display: inline-block;
+}
+.service-icon{
+
+    position: relative;
+}
+
+.service-title p{
+padding: 0 190px;
+margin-top: 10px;
+}
+
+.service-icon i{
+
+    font-size: 40px;
+    color: #e8bc00;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+.service-wrap{
+    border: 1px solid #e6e6e6;
+    padding:50px 30px;
+    position: relative;
+}   
+
+.service-wrap p{
+    position: relative;
+}
+.service-title h2{
+    animation: anim 4s ease-out;
+}
+
+@keyframes anim {
+    0% {
+      transform: translateZ(-400px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+.service-wrap:hover{
+
+    background-image: url(https://source.unsplash.com/1600x900/?nature);
+background-size: cover;
+background-position: center center;
+background-attachment: local;
+transition: all 0.5s;
+
+}
+
+.service-wrap:hover::before{
+    background: rgba(0, 0, 0,
+    0.2901960784313726);
+    position: absolute;
+height: 100%;
+width: 100%;
+left: 0px;
+content: "";
+top: 0;
+opacity: 1;
+
+}
+
+.service-wrap:hover h4, .service-wrap:hover  p , .service-wrap:hover a{
+color:#fff;
+
+}
+
+.service-wrap h4{
+
+    font-weight: 600;
+    color:#1e2331;
+    margin-bottom: 17px;
+font-size: 18px;
+text-transform: capitalize;
+position: relative;
+}
+
+.service-wrap a{
+text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
